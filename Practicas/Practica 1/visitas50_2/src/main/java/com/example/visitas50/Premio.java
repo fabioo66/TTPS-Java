@@ -1,12 +1,14 @@
 package com.example.visitas50;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet(name = "Premio", value = "/Premio")
 public class Premio extends jakarta.servlet.http.HttpServlet {
     private int contadorVisitantes = 0;
     private String message = "¡Felicitaciones @! eres el visitante número # de nuestro sitio y has sido\n" +
